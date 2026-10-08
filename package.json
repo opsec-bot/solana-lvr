@@ -1,0 +1,38 @@
+{
+  "name": "solana-lvr",
+  "version": "0.1.0",
+  "description": "Loss-versus-rebalancing meter and LP backtester for Solana pools (Orca, Raydium CLMM, Meteora DLMM).",
+  "type": "module",
+  "license": "MIT",
+  "main": "src/index.ts",
+  "bin": {
+    "lvr": "src/cli.ts"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "lvr": "tsx src/cli.ts"
+  },
+  "keywords": [
+    "solana",
+    "lvr",
+    "amm",
+    "liquidity",
+    "orca",
+    "raydium",
+    "meteora",
+    "backtest"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.3"
+  },
+  "dependencies": {
+    "bs58": "^6.0.0"
+  }
+}
